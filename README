@@ -1,8 +1,8 @@
 DESCRIPTION
 
-Recursive Transition Network (RTN) for constructing "fancy nouns"
-Modification of the RTN on page 132 of the Twentieth-anniversary Edition of
-"Godel, Escher, Bach" by Douglas R. Hofstadter
+Recursive Transition Network (RTN) for constructing "fancy nouns."
+A modification of the RTN on page 132 of the Twentieth-anniversary Edition of
+"Godel, Escher, Bach" by Douglas R. Hofstadter.
 Features an unbounded adverb loop before a given verb: the ORNATE_VERB structure
 
                                               -> ORNATE_VERB -> FANCY_NOUN -> end
