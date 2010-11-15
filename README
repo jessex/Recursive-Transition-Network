@@ -1,0 +1,51 @@
+DESCRIPTION
+
+Recursive Transition Network (RTN) for constructing "fancy nouns"
+Modification of the RTN on page 132 of the Twentieth-anniversary Edition of
+"Godel, Escher, Bach" by Douglas R. Hofstadter
+Features an unbounded adverb loop before a given verb: the ORNATE_VERB structure
+
+                                              -> ORNATE_VERB -> FANCY_NOUN -> end
+                          -> RELATIVE_PRONOUN -> FANCY_NOUN -> ORNATE_VERB -> end
+FANCY_NOUN -> ORNATE_NOUN -> end
+                          -> PREPOSITION -> FANCY_NOUN -> end
+
+            -> NOUN -> end
+ORNATE_NOUN -> ADJECTIVE (unbounded loop) -> NOUN -> end
+            -> ARTICLE -> ADJECTIVE (unbounded loop) -> NOUN -> end
+                       -> NOUN -> end
+
+ORNATE_VERB -> VERB -> end
+            -> ADVERB (unbounded loop) -> VERB -> end
+            
+            
+Each branch-choice is picked randomly with equal odds. Each unbounded loop
+iterates again with 0.5 probability. Each word is chosen from its respective
+dictionary with equal odds.
+            
+            
+EXAMPLES
+
+the panicky flashy acid tested cannon everybody kept teeny wary cow with sound
+
+average sheep with nutty jeans
+
+icky lyrical nimble bears
+
+neighborly question its tensely left the class all the cultured friend along the prison until jellyfish in thinkable envious fierce reason after angry shocking wren their the callous thoughtless empty befitting bells without sleep of loutish used woozy pigs accidentally openly sprang arose
+
+air its the snobbish man across game who sped erratic slave much the rat under the dapper amusement this the ruddy ordinary effect along police up battle toward prison behind soda against alive far-flung guarded silent calendar usually lazily spit dearly judgementally leapt instantly thought
+
+the aberrant star toward the nebulous fearful slim sea during the shaky nine belligerent separate piquant auspicious elbow next health whomever perfectly proved the knot
+
+makeshift delicate channel over teeth yourself sneaked strong tiresome filthy lackadaisical astonishing macho courageous fluttering damp second smell
+
+the abounding cruel magenta labored fascinated shock
+
+            
+NOTE
+
+Many of these sound like some post-modern poems you would hear at a stand-
+up poetry jam and could honestly pass off as such. If you ever want a career in
+poetry, just fire this up and you have a vast amount of material to work with.
+            
