@@ -1,4 +1,6 @@
 from random import randint
+from string import strip
+import linecache
 
 """
 Recursive Transition Network (RTN) for constructing "fancy nouns"
@@ -27,7 +29,7 @@ def article():
     return "the"
 
 def adjective():
-    return "adjective"
+    return strip(linecache.getline("adjective.txt", randint(1,1133)))
 
 def adjective_loop():
     adj = adjective()
@@ -38,16 +40,16 @@ def adjective_loop():
     return adj
 
 def noun():
-    return "noun"
+    return strip(linecache.getline("noun.txt", randint(1,982)))
 
 def relative_pronoun():
-    return "relative_pronoun"    
+    return strip(linecache.getline("pronoun.txt", randint(1,76)))
 
 def preposition():
-    return "preposition"
+    return strip(linecache.getline("preposition.txt", randint(1,59)))
 
 def adverb():
-    return "adverb"
+    return strip(linecache.getline("adverb.txt", randint(1,331)))
 
 def adverb_loop():
     adv = adverb()
@@ -59,7 +61,7 @@ def adverb_loop():
 
 
 def verb():
-    return "verb"
+    return strip(linecache.getline("verb.txt", randint(1,161)))
 
 def ornate_verb():
     choice = randint(1,2)
