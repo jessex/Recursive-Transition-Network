@@ -3,9 +3,9 @@ from string import strip
 import linecache
 
 """
-Recursive Transition Network (RTN) for constructing "fancy nouns"
+Recursive Transition Network (RTN) for constructing "fancy nouns."
 Modification of the RTN on page 132 of the Twentieth-anniversary Edition of
-"Godel, Escher, Bach" by Douglas R. Hofstadter
+"Godel, Escher, Bach" by Douglas R. Hofstadter.
 Features an unbounded adverb loop before a given verb: the ORNATE_VERB structure
 
                                               -> ORNATE_VERB -> FANCY_NOUN -> end
@@ -107,7 +107,7 @@ def fancy_noun():
     return fancy
 
 
-
-print fancy_noun()
+if __name__ == "__main__":
+    print fancy_noun()
 
     
